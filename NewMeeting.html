@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------------css links------------>
+    <link rel="stylesheet" href="home.css" />
+    <title>New Meeting</title>
+</head>
+
+<body>
+    <!-------------------navbar----------------->
+    <header>
+        <div class="nav container">
+            <div>
+                <a href="navbar.html" class="websiteName">Meeting Navigator</a>
+            </div>
+            <ul class="navbar">
+                <li><a href="NewMeeting.html">New Meeting </a></li>
+                <li><a href="LatestMeeting.html"> Latest Meeting</a></li>
+            </ul>
+            <!------------login buttom---------------->
+            <a href="#"><button>Sign Out</button></a>
+        </div>
+    </header>
+            <!-------------new meeting-------------------->
+    <div class="mettingLink">
+        <section>
+            <form action="get" target="_blank">
+                <label for="mettingName">Metting Name : </label>
+                <input class="" id="mettingName" type="text" required minlength="2" maxlength="70" />
+                <br />
+                <br />
+                <br />
+                <label for="mettingSubject">Metting Subject : </label>
+                <input class="" id="mettingSubject" type="text" required minlength="2" maxlength="70" />
+                <br />
+                <br />
+                <br />
+                <button type="submit">Creat Metting</button>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <ul>
+                <il><a href="navbar.html" class="websiteName">Meeting Navigator</a></il>
+            </ul>
+            <div>
+                <a href="login.html"><button>Log In</button></a>
+            </div>
+        </div>
+    </header>
+    <div class="login container">
+        <div class="login-container">
+            <h2 class="handelh2">Welcome, Let’s get started</h2>
+            <form action="login.html" id="signupForm" >
+                <span>Enter your full name</span>
+                <input type="text" id="name" placeholder="your name" required minlength="3">
+                <div id="nameError" class="error-message"></div>
+                
+                <span>Enter your email address</span>
+                <input type="email" id="email" placeholder="yourmail@gmail.com" required>
+                <div id="emailError" class="error-message"></div>
+                
+                <span>Phone</span>
+                <input type="number" id="phone" placeholder="Enter your number" required>
+                <div id="phoneError" class="error-message"></div>
+                
+                <span>Enter your password</span>
+                <input type="password" id="password" placeholder="password" required minlength="8">
+                <div id="passwordError" class="error-message"></div>
+                
+                <button type="submit" class="btn">Sign Up</button>
+                <a href="login.html">Already have an account</a>
+            </form>
+            <a href="login.html" class="btn"><button class="btn">Log in</button></a>
+        </div>
+    </div>
+</body>
+<script src="validation.js"></script>
+</html>

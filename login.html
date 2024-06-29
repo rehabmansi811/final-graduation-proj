@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <!--links to css-->
+    <link rel="stylesheet" href="home.css">
+    <!--Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <ul>
+                <il><a href="navbar.html" class="websiteName">Meeting Navigator</a></il>
+            </ul>
+            <div>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+        </div>
+    </header>
+    <div class="login container">
+        <div class="login-container">
+            <h2>Log in To Continue</h2>
+            <!-----------------login form--------------------->
+            <form action="NewMeeting.html" id="loginForm">
+                <span>Enter your email address</span>
+                <input type="email" id="email" placeholder="yourmail@gmail.com" required>
+                <div id="emailError" class="error-message"></div>
+                <span>Enter your password</span>
+                <input type="password" id="password" placeholder="password" required minlength="8">
+                <div id="passwordError" class="error-message"></div>
+                <a href= "NewMeeting.html"><button type="submit" class="btn"> Log In </button></a>
+                <a href="#">Forget Password?</a>
+            </form>
+            <a href="signup.html" class="btn"><button class="btn"> Sign up now</button></a>
+        </div>
+        <!------------------------log in image--------------->
+        <!--<div class="login-image">
+            <img src=" " alt="">
+        </div>-->
+    </div>
+</body>
+<script src="validationLogin.js"></script>
+</html>

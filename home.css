@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #fd7e14;
+    --bg-color: black;
+    --second-clor:#8a8a8a;
+}
+/*---------------------home page -------------------------*/
+.container {
+    max-width: 1068px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    display: block;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background: var(--bg-color);
+    z-index: 100;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+.websiteName {
+    font-size: 2rem;
+    color: #fd7e14;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    color: var(--main-color);
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: solid #fd7e14;
+    padding: 8px 22px;
+    border-radius: 5rem;
+    box-shadow: inset 0 0 0 0 #fd7e14;
+}
+
+button:hover {
+    color: rgb(241, 237, 237);
+    box-shadow: inset 0 -100px 0 0 #fd7e14;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.intro {
+    margin: 80px 40px;
+    position: relative;
+    width: 60%;
+    padding-top: 20px;
+
+}
+
+.large {
+    font-weight:600;
+    font-size: 43px;
+    margin-bottom: 20px;
+}
+
+.big {
+    font-weight: 500;
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+
+.normal {
+    font-weight: 400;
+    font-size: 25px;
+}
+/*-------------------------------new meeting -----------------------------*/
+.navbar{
+    display: flex;
+    
+}
+.navbar a{
+    padding: 8px 17px;
+    color: var(--main-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+}
+.navbar a:hover{
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.mettingLink {
+    padding: 20px;
+    border: 5px solid #fd7e14;
+    text-align: center;
+    border-radius: 10px;
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*------------------------------latest maating--------------------------------------*/
+#list {
+    margin: 15% 22% 20%;
+}
+
+.radioBox {
+    display: block;
+    position: relative;
+    align-items: center;
+    width: 60%;
+    margin-top: 90px;
+    padding: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.select {
+    border: 25%;
+}
+
+#selectMeeting {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+    color: #000000;
+}
+
+.style {
+    border-radius: 50%;
+}
+
+.rounded-square {
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 6px solid #fd7e14;
+    /* Adjust the border-radius to control the curvature */
+    box-shadow: 8px 8px #fd7d14c5(0, 0, 0, 0.692) ;
+    align-items: center;
+    color: #fff;
+    
+}
+/*
+#selectItem {
+    background-color: #ddd;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    margin: 7px;
+    width: 100%;
+    border-radius: 5rem
+} */
+
+/* Style the search box */
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    margin: 0px 7px 7px 7px;
+    padding: 11px;
+    border: 2px solid #fd7e14;
+    border-radius: 5rem;
+}
+
+/* Style the navigation menu */
+#myMenu {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0px 7px 7px 7px;
+    height: 200px;
+    border: 2px solid #fd7e14;
+    overflow: scroll;
+    width: 100%;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    background: #eee;
+    border : 3px solid #ddd;
+}
+
+#myMenu li a:hover {
+    background-color: #bbb3b3;
+}
+#toggleButton{
+    background:#ffffff;
+    margin-top: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#handelSpace{
+    /*padding-left :-40px;*/
+    margin-right: 25px;
+    color: #000000;
+    
+}
+/*--------------------------login ---------------------*/
+.login{
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+}
+.login-container h2{    
+    font-size: 1.4rem;
+}
+.login-container form{
+    display: flex;
+    flex-direction: column;
+}
+.login-container form span{
+    font-size: .9rem;
+    color: #8a8a8a;
+    margin-bottom: 4px;
+}
+.login-container form input{
+    border: 1px solid var(--main-color) ;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+.login-container form a{
+    font-size: 0.9rem;
+    text-align: right;
+    margin-top: 10px;
+
+}
+.btn{
+    width: 100%;
+}
+/*--------------------sign up------------------------*/
+.handelh2{
+    margin-top: 80px;
+}
+/*----------------------image------------------------*/
+.login-image{
+    display: flex;
+    margin: 20px;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-image: cover;
+    
+}
+/* Add these styles at the end of home.css */
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+input.invalid {
+    border-color: red;
+}
