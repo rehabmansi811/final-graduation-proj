@@ -293,3 +293,20 @@ button:active {
 input.invalid {
     border-color: red;
 }
+/*----------------summary---------------*/
+.boxScroll{
+    background-color: #f5eded;
+    color: #000000;
+    padding: 10px;
+    
+
+}
+#box-contant{
+    font-size: 20px;
+    list-style-type: none;
+    padding: 10px;
+    height: 450px;
+    border: 2px solid #fd7e14;
+    overflow: scroll;
+    width: 100%;
+}
